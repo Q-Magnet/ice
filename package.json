@@ -1,0 +1,27 @@
+{
+  "name": "ice",
+  "displayName": "ice-language-support",
+  "description": "An basic programming language",
+  "publisher": "Magnet",
+  "repository": {},
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.54.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "ice",
+      "aliases": ["Ice", "ice"],
+      "extensions": [".ice", ".i"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "ice",
+      "scopeName": "source.ice",
+      "path": "./syntaxes/ice.tmLanguage.json"
+    }]
+  }
+}

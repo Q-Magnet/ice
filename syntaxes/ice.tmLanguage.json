@@ -1,0 +1,30 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Ice",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#comment"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.ice",
+				"match": "\\b(print|printv|nl|setinput|add|END|finish)\\b"
+			}]
+		},
+		"comment": {
+			"name": "comment.control.ice",
+			"patterns": [
+				{
+					"name": "constant.character.escape.ice",
+					"match": "\\b(C)\\b"
+				}
+			]
+		}
+	},
+	"scopeName": "source.ice"
+}
